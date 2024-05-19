@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Imágenes <br/> del Barroco andino</h1>
+        <p>Bienvenido al generador de imágenes del Barroco Andino, puedes generar imágenes de cuadros, esculturas o murales de lo que quieras</p>
+        <textarea id="prompt" placeholder="¿Qué quiere que se muestre en la foto?"></textarea>
+        <select id="style">
+            <option selected disabled>Elige el tipo de imagen</option>
+            <option value="cuadros-coleccion">Cuadro religioso</option>
+            <option value="cuadros-figuras">Pintura tipo Barroco Andino</option>
+            <option value="esculturas">Escultura tipo barroco andino</option>
+            <option value="esculturas-coleccion">Escultura religiosa</option>
+            <option value="murales">Pintura tipo mural Barroco Andino</option>
+        </select>
+        <button onclick="generateImage()">Generar Imagen</button>
+        <div id="loading" style="display: none;">
+            <img src="/static/loading.gif" alt="Loading...">
+            <p>Generando imagen...</p>
+            <p><small>Se paciente, puede tardar unos minutos con CPU</small></p>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

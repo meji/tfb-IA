@@ -1,0 +1,14 @@
+aiofiles
+python-multipart
+pillow
+torchvision
+transformers
+diffusers
+Augmentor
+datasets
+fastapi
+uvicorn
+torch
+pydantic
+peft
+websockets
